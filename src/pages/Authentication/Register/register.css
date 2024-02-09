@@ -1,0 +1,94 @@
+.progress {
+    height: 3px !important;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.show-pass{
+    position: absolute;
+    top:5%;
+    right: 8%;
+}
+.progress-bar-danger {
+    background-color: #e90f10;
+}
+.progress-bar-warning{
+    background-color: #ffad00;
+}
+.progress-bar-success{
+    background-color: #02b502;
+}
+#password-strength{
+    height: 2px;
+}
+.list-unstyled{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background: #eff2f5;
+    border-radius: 0 0 7px 7px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.list-unstyled li span{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.register-input-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap:3px
+}
+.country{
+    position: relative;
+}
+.country-code{
+    border: none;
+    background: var(--color-light-gray);
+    padding: 22px 5px;
+    
+    border-radius: 6px;
+    outline: none;
+    width: 70px;
+    height: 61px
+}
+
+.country-code option:checked{
+    color: #c7c8c9;
+}
+
+.country-code:invalid{
+    color:var(--color-light-gray)
+}
+.country-code-flag{
+    position: absolute;
+    height: 28px;
+    width: 51px;
+    margin: 10px 0px 20px 0;
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.country-code-flag img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    border-radius: 11px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 2px #c7c8c9);
+}
+
+@media only screen and (max-width: 560px) {
+    .form-group{
+        flex-grow: 1;
+    }
+    .register-input-wrapper{
+        flex-wrap: wrap;
+    }
+  }

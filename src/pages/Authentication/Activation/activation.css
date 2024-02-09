@@ -1,0 +1,44 @@
+.activation-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap:40px;
+}
+.activation-main .activation-reset{
+    display: flex;
+    font-size: 50px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    padding: 20px 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.activation-main a{
+    text-decoration: none;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: var(--activeBackground);
+    border-radius: 10px;
+    width: 50%;
+    max-width: 300px;
+    color: white;
+    font-size: 30px;
+    transition: 0.25s ease;
+}
+.activation-resend {
+    margin: 0 0 0 auto;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--fontColor) !important;
+    cursor: pointer;
+}
+.activation-resend:hover{
+    
+    text-decoration: underline;
+}
