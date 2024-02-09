@@ -14,7 +14,6 @@ function Authentication() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Request-Headers": true,
       },
       body: JSON.stringify({
         subdomain: window.location.hostname.split(".")[0],
