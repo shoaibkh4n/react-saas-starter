@@ -17,6 +17,9 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.logo.quazire:hover {
+  filter: drop-shadow(0 0 2em #848484aa);
+}
 
 @keyframes logo-spin {
   from {
@@ -108,4 +111,18 @@
     line-height: 1;
     margin-top: 30px;
   }
+}
+
+header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  gap: 30px;
+  width: 100vw;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

@@ -9,7 +9,7 @@ function Notfound() {
             Don't worry. Since you're valuable to us we will bring you back to
             safety
           </p>
-          <a href="/dashboard" className="err_btn">
+          <a href="/" className="err_btn">
             Back to home
           </a>
         </div>
