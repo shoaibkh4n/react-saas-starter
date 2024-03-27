@@ -7,9 +7,9 @@ interface ApiOptions<T> {
   body?: T;
 }
 
-interface JsonType {
-  [key: string]: any;
-}
+// interface JsonType {
+//   [key: string]: any;
+// }
 
 // Helper function to generate headers
 function createHeaders(withAuth: boolean = false): HeadersInit {
@@ -26,9 +26,7 @@ function createHeaders(withAuth: boolean = false): HeadersInit {
   return headers;
 }
 
-async function fetchWrapper<T, R = JsonType>(
-  options: ApiOptions<T>
-): Promise<R> {
+async function fetchWrapper<T>(options: ApiOptions<T>) {
   const { endpoint, method, withAuth = false, body } = options;
   const headers = createHeaders(withAuth);
 
@@ -50,7 +48,7 @@ async function fetchWrapper<T, R = JsonType>(
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     // Assuming all responses are JSON. Adjust if necessary.
-    return (await response.json()) as R;
+    return response;
   } catch (error) {
     console.error("API call failed:", error);
     throw error;
